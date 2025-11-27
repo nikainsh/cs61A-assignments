@@ -65,3 +65,4 @@ CREATE TABLE low_variance AS
   and height <= 1.3*(SELECT avg(d1.height) from dogs as d1, dogs as d2 where d1.fur = d2.fur) 
   then 1 else 0 end)
         =count(*);
+        
