@@ -257,7 +257,6 @@ def display(fruit, count):
     return '[' + str(count) + ' ' + fruit + ']'
 
 
-
 def count_palindromes(L):
     """The number of palindromic words in the sequence of strings
     L (ignoring case).
