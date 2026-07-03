@@ -1,6 +1,8 @@
-hot100第20题 有效括号
-初版代码：
-'''
+# Hot100 第20题：有效括号
+
+## 初版代码
+
+```python
 class Solution(object):
     def isValid(self, s):
         """
@@ -28,11 +30,12 @@ class Solution(object):
         if stack:
             return False
         return True
-'''
-
+```
 明显代码过于冗长，条件分支语句太多；切片操作是O(n)的，这样实际运行时长的复杂度可能达到O(n^2)；
-优化码风版：
-'''
+
+## 优化码风版：
+
+```python
 class Solution(object):
     def isValid(self, s):
         """
@@ -50,4 +53,3 @@ class Solution(object):
             else:
                 stack.append(c)
         return not stack
-'''
